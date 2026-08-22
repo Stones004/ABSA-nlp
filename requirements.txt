@@ -1,0 +1,21 @@
+# Core data handling
+pandas>=2.0.0
+numpy>=1.24.0
+openpyxl>=3.1.0          # reading/writing the intrinsic-eval labeling .xlsx
+
+# Primary pipeline: keyword+FinBERT (Section 6 / aspect_sentiments.csv generation)
+transformers>=4.40.0
+torch>=2.2.0
+
+# Demo pipeline: semantic search + ModernBERT (semantic_modernbert_demo.py)
+sentence-transformers>=3.0.0
+# transformers + torch above are shared by both pipelines
+# tabularisai/ModernFinBERT and all-MiniLM-L6-v2 are downloaded automatically
+# from Hugging Face on first run — no separate install needed for the weights
+
+# Intrinsic evaluation metrics (Section 7: precision/recall/F1, confusion matrix)
+scikit-learn>=1.4.0
+
+# Optional: only needed if you regenerate PDF/report assets locally
+# reportlab>=4.0.0
+# pypdf>=4.0.0
