@@ -1,5 +1,18 @@
 # Demo: Semantic Aspect Matching + ModernBERT Sentiment
 
+## Web UI
+
+`app.py` is a Streamlit UI on top of the same pipeline described below: paste
+in one or more sentences, and it tags each with its closest aspect (semantic
+matching) and a sentiment label (ModernFinBERT).
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Then open the URL Streamlit prints (defaults to http://localhost:8501).
+
 This is a runnable demonstration of the **robustness pipeline** described in
 Section VI-C of the report ("semantic+ModernBERT"), shown live alongside the
 **primary keyword+FinBERT pipeline** whose output populates `aspect_sentiments.csv`

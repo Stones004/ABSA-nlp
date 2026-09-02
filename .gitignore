@@ -1,0 +1,4 @@
+.hf_cache/
+__pycache__/
+*.pyc
+NLP_Project_Report.docx

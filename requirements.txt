@@ -16,6 +16,9 @@ sentence-transformers>=3.0.0
 # Intrinsic evaluation metrics (Section 7: precision/recall/F1, confusion matrix)
 scikit-learn>=1.4.0
 
+# Web UI (app.py)
+streamlit>=1.37.0
+
 # Optional: only needed if you regenerate PDF/report assets locally
 # reportlab>=4.0.0
 # pypdf>=4.0.0
